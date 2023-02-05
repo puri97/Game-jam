@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1855654201454462925}
   m_Layer: 0
   m_Name: Fungus_4
-  m_TagString: power1
+  m_TagString: powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

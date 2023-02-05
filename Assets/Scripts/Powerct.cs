@@ -12,7 +12,7 @@ public class Powerct : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        power = 10;
+        power = 100;
         Powerup.text = "Power: " + power;
         Win.text = " ";
     }
@@ -22,17 +22,17 @@ public class Powerct : MonoBehaviour
     {
         if (power == 0)
         {
-            Win.text = "YOU LOSE :( BETTER LUCK NEXT TIME! ";
+            Win.text = "Rocky soil makes it hard for plants to grow...";
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "powerup") {
-            power = power + 10;
+        if (collision.tag == "powerup" || collision.tag == "power1") {
+            power = power + 1;
         }
-        if (collision.tag == "rock")
+        if (collision.tag == "rock" || collision.tag == "rock1")
         {
-            power = power - 5;
+            power = power - 1;
         }
         Powerup.text = "Power: " + power;
     }

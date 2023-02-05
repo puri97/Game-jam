@@ -18,7 +18,7 @@ public class destroy : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (this.gameObject.CompareTag("powerup")) { 
+        if (this.gameObject.CompareTag("powerup") || this.gameObject.CompareTag("power1")) { 
             Destroy(this.gameObject, 0.3f);
         }
         if (this.gameObject.CompareTag("surprise1")) {
