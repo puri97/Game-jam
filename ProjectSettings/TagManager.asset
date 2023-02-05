@@ -10,6 +10,7 @@ TagManager:
   - surprise1
   - rock
   - powerup
+  - water
   layers:
   - Default
   - TransparentFX
@@ -47,15 +48,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Players
-    uniqueID: 4205600355
-    locked: 1
-  - name: Obstacles and Powerup
-    uniqueID: 3844816719
+  - name: Background
+    uniqueID: 2890905637
     locked: 0
   - name: Foreground
     uniqueID: 1324892805
     locked: 0
-  - name: Background
-    uniqueID: 2890905637
+  - name: Obstacles and Powerup
+    uniqueID: 3844816719
     locked: 0
+  - name: Players
+    uniqueID: 4205600355
+    locked: 1

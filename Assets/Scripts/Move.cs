@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,10 @@ public class Move : MonoBehaviour
     [SerializeField] private float Speed;
     //Initialize through the inspector of the turn speed of the root
     [SerializeField] private float TurnSpeed;
+    [SerializeField] private Transform mainCamera;
     [SerializeField] private Transform player;
+
+    private Boolean ending;
 
     //direction the root is traveling
     private Vector2 direction;
@@ -23,12 +27,19 @@ public class Move : MonoBehaviour
     // Player control for moving the root
     private void Update()
     {
+        if (!ending)
+        {
+            mainCamera.position = player.position + new Vector3(0, 0, -10);
+        }else if (ending && mainCamera.position.y <= 100f)
+        {
+            mainCamera.Translate(Vector2.up * 5 * Time.deltaTime);
+        }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(Vector3.forward, TurnSpeed);
+            transform.Rotate(Vector3.forward, -TurnSpeed);
         }else if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(Vector3.forward, -TurnSpeed);
+            transform.Rotate(Vector3.forward, TurnSpeed);
         }
 
     }
@@ -47,6 +58,10 @@ public class Move : MonoBehaviour
         if (collision.tag == "powerup1")
         {
             Speed += 0.5f;
+        }
+        if (collision.tag.Equals("water"))
+        {
+            ending = true;
         }
     }
 }
