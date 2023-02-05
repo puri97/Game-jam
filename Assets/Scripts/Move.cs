@@ -9,6 +9,7 @@ public class Move : MonoBehaviour
     [SerializeField] private float Speed;
     //Initialize through the inspector of the turn speed of the root
     [SerializeField] private float TurnSpeed;
+    [SerializeField] private Transform player;
 
     //direction the root is traveling
     private Vector2 direction;
@@ -16,19 +17,18 @@ public class Move : MonoBehaviour
     void Start()
     {
         //Initialize the root going downward
-        direction = Vector2.down;
+        direction = Vector2.up;
     }
 
     // Player control for moving the root
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
-            direction.x -= TurnSpeed;
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
+            transform.Rotate(Vector3.forward, TurnSpeed);
+        }else if (Input.GetKey(KeyCode.D))
         {
-            direction.x += TurnSpeed;
+            transform.Rotate(Vector3.forward, -TurnSpeed);
         }
 
     }
@@ -42,7 +42,7 @@ public class Move : MonoBehaviour
     {
         if (collision.tag == "rock")
         {
-            Speed -= Speed;
+            Debug.Log("Hello");
         }
         if (collision.tag == "powerup1")
         {
