@@ -51,10 +51,62 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 6429096330824315909}
   MinDistance: 1
   MaxDistance: 20
   Length: 839
+--- !u!114 &-5860007407489279767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music Backup
+  m_EditorClassIdentifier: 
+  Path: event:/Music Backup
+  Guid:
+    Data1: -406996213
+    Data2: 1136247470
+    Data3: -1603273849
+    Data4: 294520509
+  Banks:
+  - {fileID: -3888420637645218922}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 369142
+--- !u!114 &-5552428950527950821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Geode/impact
+  m_EditorClassIdentifier: 
+  Name: impact
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3278020998
+    data2: 4089307822
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-3888420637645218922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,10 +122,10 @@ MonoBehaviour:
   Path: ../../../Game Jam/Game Jam Sound/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638111572092036046
+  lastModified: 638111926750156867
   FileSizes:
   - Name: Desktop
-    Value: 89056
+    Value: 4608896
   Exists: 1
 --- !u!114 &-3852629358066479049
 MonoBehaviour:
@@ -114,10 +166,10 @@ MonoBehaviour:
   Path: ../../../Game Jam/Game Jam Sound/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638111572092065995
+  lastModified: 638111926750355964
   FileSizes:
   - Name: Desktop
-    Value: 928
+    Value: 972
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -139,12 +191,13 @@ MonoBehaviour:
   - {fileID: -7898723205723955088}
   - {fileID: -8786649049387451293}
   - {fileID: 2360590556439169449}
+  - {fileID: -5860007407489279767}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3888420637645218922}
   StringsBanks:
   - {fileID: -3516218316418640579}
-  cacheTime: 638111572092065995
+  cacheTime: 638111926750355964
   cacheVersion: 131601
 --- !u!114 &2360590556439169449
 MonoBehaviour:
@@ -169,10 +222,35 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -5552428950527950821}
   MinDistance: 1
   MaxDistance: 20
   Length: 1080
+--- !u!114 &6429096330824315909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Power Up/impact
+  m_EditorClassIdentifier: 
+  Name: impact
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3278020998
+    data2: 4089307822
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &6897294171786390872
 MonoBehaviour:
   m_ObjectHideFlags: 0
