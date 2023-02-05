@@ -13,6 +13,12 @@ public class Move : MonoBehaviour
     //direction the root is traveling
     private Vector2 direction;
 
+    // Variable to store Player location so as to calculate velocity.
+    private Vector2 whereItWas;
+    // Calculate how fast Player is Moving.
+
+    public float PlayerVelocity = 0.0f;
+
     void Start()
     {
         //Initialize the root going downward
@@ -42,7 +48,8 @@ public class Move : MonoBehaviour
     {
         if (collision.tag == "rock")
         {
-            Speed -= Speed;
+            Speed -= 0.3f;
+            Debug.Log ("Hello");
         }
         if (collision.tag == "powerup1")
         {
