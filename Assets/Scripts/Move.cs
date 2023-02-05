@@ -1,8 +1,10 @@
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Move : MonoBehaviour
 {
@@ -17,7 +19,7 @@ public class Move : MonoBehaviour
 
     //direction the root is traveling
     private Vector2 direction;
-
+    public TextMeshProUGUI Win;
     void Start()
     {
         //Initialize the root going downward
@@ -41,7 +43,7 @@ public class Move : MonoBehaviour
         {
             transform.Rotate(Vector3.forward, TurnSpeed);
         }
-
+        
     }
     //Late update function to update root position
     private void LateUpdate()

@@ -23,12 +23,7 @@ public class CameraFollow : MonoBehaviour
 
     private void Update()
     {
-        if (endingBoolean == false)
-        {
-            mainCamera.transform.position = player.position + new Vector3(0, 0, -10);
-        }else if(endingBoolean == true) {
-            endingCamera.transform.Translate(Vector2.down* 3 * Time.deltaTime);
-        }
+         mainCamera.transform.position = player.position + new Vector3(0, 0, -10);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

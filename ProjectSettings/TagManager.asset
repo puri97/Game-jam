@@ -11,6 +11,7 @@ TagManager:
   - rock
   - powerup
   - water
+
   layers:
   - Default
   - TransparentFX
