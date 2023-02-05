@@ -10,6 +10,7 @@ TagManager:
   - surprise1
   - rock
   - powerup
+  - dest
   layers:
   - Default
   - TransparentFX
