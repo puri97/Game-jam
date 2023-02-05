@@ -558,7 +558,7 @@ TrailRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -89366941
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Time: 1000
   m_Parameters:
@@ -642,6 +642,7 @@ MonoBehaviour:
   TurnSpeed: 0.25
   mainCamera: {fileID: 139364899}
   player: {fileID: 505234112}
+  Win: {fileID: 0}
 --- !u!212 &505234111
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -681,7 +682,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -89366941
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -945,6 +946,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7473226698174819697, guid: a876a8188e3c8b145ac246074b11f0b7, type: 3}
   m_PrefabInstance: {fileID: 2005568228}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1062252743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1062252745}
+  - component: {fileID: 1062252744}
+  m_Layer: 0
+  m_Name: NextScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1062252744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062252743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91868a985d9a88e49b693bfa1e59c99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 139364899}
+--- !u!4 &1062252745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062252743}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.398346, y: 94.42081, z: -0.0042344406}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1188913893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7473226698174819697, guid: a876a8188e3c8b145ac246074b11f0b7, type: 3}

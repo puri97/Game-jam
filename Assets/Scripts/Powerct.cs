@@ -36,11 +36,4 @@ public class Powerct : MonoBehaviour
         }
         Powerup.text = "Power: " + power;
     }
-
-    
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-
-    //    Powerup.text = "Power: " + power;
-    //}
 }
