@@ -25,6 +25,7 @@ public class destroy : MonoBehaviour
             Instantiate(power, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
-    
+        
     }
+   
 }
