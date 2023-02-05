@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 884050877476706989}
   - component: {fileID: 4982159123314103394}
   - component: {fileID: 1000322393546494963}
+  - component: {fileID: 4878434863753905441}
   m_Layer: 0
   m_Name: Rock_Cleaved
   m_TagString: rock
@@ -127,3 +128,33 @@ MonoBehaviour:
   Powerup: {fileID: 0}
   power: 0
   Win: {fileID: 0}
+--- !u!114 &4878434863753905441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8657978675830014123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: -696348256
+      Data2: 1109551311
+      Data3: 1934244783
+      Data4: -57689966
+    Path: event:/Rock Hit
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

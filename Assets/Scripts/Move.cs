@@ -14,6 +14,10 @@ public class Move : MonoBehaviour
     [SerializeField] private float TurnSpeed;
     [SerializeField] private Transform mainCamera;
     [SerializeField] private Transform player;
+    // Variable to store Player location so as to calculate velocity.
+    private Vector2 whereItWas;
+    // Calculate how fast Player is Moving.
+    public float PlayerVelocity = 0.0f;
 
     private Boolean ending;
 
