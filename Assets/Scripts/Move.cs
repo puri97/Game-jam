@@ -1,5 +1,5 @@
 
-
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +12,10 @@ public class Move : MonoBehaviour
     [SerializeField] private float Speed;
     //Initialize through the inspector of the turn speed of the root
     [SerializeField] private float TurnSpeed;
+    [SerializeField] private Transform mainCamera;
+    [SerializeField] private Transform player;
+
+    private Boolean ending;
 
     //direction the root is traveling
     private Vector2 direction;
@@ -19,20 +23,25 @@ public class Move : MonoBehaviour
     void Start()
     {
         //Initialize the root going downward
-        direction = Vector2.down;
-        Win.text = " ";
+        direction = Vector2.up;
     }
 
     // Player control for moving the root
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (!ending)
         {
-            direction.x -= TurnSpeed;
+            mainCamera.position = player.position + new Vector3(0, 0, -10);
+        }else if (ending && mainCamera.position.y <= 100f)
+        {
+            mainCamera.Translate(Vector2.up * 5 * Time.deltaTime);
         }
-        else if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.A))
         {
-            direction.x += TurnSpeed;
+            transform.Rotate(Vector3.forward, -TurnSpeed);
+        }else if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(Vector3.forward, TurnSpeed);
         }
         
     }
@@ -42,26 +51,19 @@ public class Move : MonoBehaviour
         transform.Translate(direction * Speed * Time.deltaTime);
     }
 
-    //future implementation when hitting an obstacle,
-    //ex) Rock or hard soil
-    //Dont worry about this yet
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-
-    //}
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "rock")
         {
-            Speed -= 0.5f;
+            Debug.Log("Hello");
         }
-        if (collision.tag == "powerup")
+        if (collision.tag == "powerup1")
         {
             Speed += 0.5f;
         }
-        if (collision.tag == "dest") {
-            Speed = 0;
-            Win.text = "YOU WIN !! ";
+        if (collision.tag.Equals("water"))
+        {
+            ending = true;
         }
     }
 }
