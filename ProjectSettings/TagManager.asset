@@ -11,8 +11,6 @@ TagManager:
   - rock
   - powerup
   - water
-  - dest
-  - rock1
   layers:
   - Default
   - TransparentFX
@@ -49,4 +47,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Backgound
+    uniqueID: 2966136737
+    locked: 0
+  - name: Plant
+    uniqueID: 1465175349
     locked: 0

@@ -4,7 +4,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
+using Unity.VisualScripting;
 
 public class Move : MonoBehaviour
 {
@@ -32,9 +34,13 @@ public class Move : MonoBehaviour
         if (!ending )
         {
             mainCamera.position = player.position + new Vector3(0, 0, -10);
-        }else if (ending && mainCamera.position.y <= 100f)
+        }else if (ending && mainCamera.position.y <= 101f)
         {
-            mainCamera.Translate(Vector2.up * 5 * Time.deltaTime);
+            mainCamera.Translate(Vector2.up * 15 * Time.deltaTime);
+        }
+        else if(mainCamera.position.y >= 101f)
+        {
+            SceneManager.LoadScene("Ending");
         }
         if (Input.GetKey(KeyCode.A))
         {

@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Spritesheet_Bloom_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 54
+        width: 160
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a881641f20f714f8ad7abc95af5a1a
+      internalID: -1733324071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Bloom_1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 53
+        width: 160
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b228d70ee9dc654da5190adbece1c55
+      internalID: -766920691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Bloom_2
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 53
+        width: 159
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c9a4ad20b310944ab8cc913177b52e
+      internalID: 1701603901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Bloom_3
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 54
+        width: 175
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4ddd4e3d9a83e46a3f02f8d6abd0dd
+      internalID: -1371937678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Bloom_4
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 53
+        width: 173
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2606dd7df0fd7184c8636b933631e877
+      internalID: 1055252922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Bloom_5
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 54
+        width: 171
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e20e5c1bb1b204b9ec9bc1870de815
+      internalID: -164084672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Bloom_6
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 52
+        width: 176
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c747dddc888d9438728dabd795b0e3
+      internalID: 617358135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Bloom_7
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 52
+        width: 170
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e8d1717dbcecf43a88cabea09ea568
+      internalID: 1092263501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Bloom_8
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 54
+        width: 176
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d360a0ccc0c9c498f253f3b1e3ec1a
+      internalID: -967120420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Bloom_9
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 52
+        width: 169
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fc6791255db094da7f89778ff101fa
+      internalID: -279195136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Bloom_10
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 52
+        width: 176
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83625e6f896293045a37a519de04af46
+      internalID: 1547041228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +345,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Spritesheet_Bloom_6: 617358135
+      Spritesheet_Bloom_3: -1371937678
+      Spritesheet_Bloom_5: -164084672
+      Spritesheet_Bloom_7: 1092263501
+      Spritesheet_Bloom_9: -279195136
+      Spritesheet_Bloom_0: -1733324071
+      Spritesheet_Bloom_4: 1055252922
+      Spritesheet_Bloom_2: 1701603901
+      Spritesheet_Bloom_10: 1547041228
+      Spritesheet_Bloom_8: -967120420
+      Spritesheet_Bloom_1: -766920691
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
