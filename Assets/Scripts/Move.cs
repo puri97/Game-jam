@@ -31,7 +31,7 @@ public class Move : MonoBehaviour
     // Player control for moving the root
     private void Update()
     {
-        if (!ending)
+        if (!ending )
         {
             mainCamera.position = player.position + new Vector3(0, 0, -10);
         }else if (ending && mainCamera.position.y <= 101f)
@@ -61,7 +61,7 @@ public class Move : MonoBehaviour
     {
         if (collision.tag == "rock")
         {
-            Debug.Log("Hello");
+            Speed -= 1f;
         }
         if (collision.tag == "powerup1")
         {
